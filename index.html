@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover timeless jewellery at Teja's Jewellery Store.">
+  <title>Teja's Jewellery Store | Timeless Elegance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">A LITTLE LUXURY, JUST FOR YOU <span>✦</span> FREE SHIPPING ON ORDERS OVER ₹2,999</div>
+  <header class="site-header">
+    <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <a class="brand" href="#"><span class="brand-mark">T</span><span>TEJA'S <small>JEWELLERY STORE</small></span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a><a href="#collections">Collections</a><a href="#bestsellers">Best Sellers</a><a href="#about">Our Story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button>
+      <button class="icon-btn" id="wishlistToggle" aria-label="Wishlist">♡ <span id="wishlistCount">0</span></button>
+      <button class="icon-btn cart-trigger" id="cartToggle" aria-label="Shopping bag">♧ <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <section class="search-panel" id="searchPanel">
+    <input type="search" id="searchInput" placeholder="Search necklaces, rings, earrings...">
+    <button class="btn btn-dark" id="searchButton">Search</button>
+  </section>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE ART OF ELEGANCE</p>
+        <h1>Jewellery that<br><em>tells your story.</em></h1>
+        <p class="hero-description">Thoughtfully chosen pieces to celebrate your every moment. Find the little something that feels like you.</p>
+        <a href="#collections" class="btn btn-gold">EXPLORE COLLECTION <span>→</span></a>
+        <div class="hero-note"><span>✧</span> Made to be treasured, made for you.</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image"></div>
+        <div class="hero-stamp">TIMELESS<br><b>BEAUTY</b><br>✦</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span>✧</span><p><b>Curated with care</b><small>Beautifully selected pieces</small></p></div>
+      <div><span>◇</span><p><b>Quality you can trust</b><small>Made for lasting memories</small></p></div>
+      <div><span>♡</span><p><b>A gift worth giving</b><small>For you and your loved ones</small></p></div>
+    </section>
+
+    <section class="section categories" id="collections">
+      <div class="section-heading"><p class="eyebrow">FIND YOUR FAVOURITE</p><h2>Shop by <em>collection</em></h2><p>Pieces for every mood, moment and memory.</p></div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Necklaces"><div class="category-photo cat-necklace"></div><span>Necklaces <b>↗</b></span></button>
+        <button class="category-card" data-category="Earrings"><div class="category-photo cat-earrings"></div><span>Earrings <b>↗</b></span></button>
+        <button class="category-card" data-category="Rings"><div class="category-photo cat-rings"></div><span>Rings <b>↗</b></span></button>
+        <button class="category-card" data-category="Bracelets"><div class="category-photo cat-bracelet"></div><span>Bracelets <b>↗</b></span></button>
+      </div>
+    </section>
+
+    <section class="section products-section" id="bestsellers">
+      <div class="products-top">
+        <div class="section-heading left"><p class="eyebrow">THE MOST LOVED</p><h2>Customer <em>favourites</em></h2><p>Meet the pieces everyone is falling for.</p></div>
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="All">All</button>
+          <button class="filter" data-filter="Necklaces">Necklaces</button>
+          <button class="filter" data-filter="Earrings">Earrings</button>
+          <button class="filter" data-filter="Rings">Rings</button>
+          <button class="filter" data-filter="Bracelets">Bracelets</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="story-banner" id="about">
+      <div class="story-image"></div>
+      <div class="story-copy"><p class="eyebrow">A NOTE FROM TEJA'S</p><h2>Every piece has<br><em>a little magic.</em></h2><p>We believe jewellery is more than an accessory. It is a memory, a milestone, a feeling you can keep close. Discover pieces chosen to make your everyday moments feel special.</p><a href="#collections" class="text-link">DISCOVER OUR COLLECTION <span>→</span></a></div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">A LITTLE SPARKLE IN YOUR INBOX</p><h2>Stay in the <em>glow.</em></h2><p>Be the first to hear about new arrivals and special offers.</p>
+      <form id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="Your email address" required><button class="btn btn-dark">SUBSCRIBE</button></form>
+      <small id="newsletterMessage"></small>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#"><span class="brand-mark">T</span><span>TEJA'S <small>JEWELLERY STORE</small></span></a><p>Little treasures. Lasting memories.</p><div><a href="#home">Home</a><a href="#collections">Collections</a><a href="#about">Our Story</a></div><small>© <span id="year"></span> Teja's Jewellery Store. All rights reserved.</small></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="side-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><h2>Your bag <span id="drawerCount">(0)</span></h2><button class="close-btn" data-close>×</button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-state">Your bag is waiting for something beautiful. ♡</div></div>
+    <div class="cart-footer"><div class="subtotal"><span>Subtotal</span><b id="cartTotal">₹0</b></div><p>Shipping and taxes calculated at checkout.</p><button class="btn btn-gold checkout-btn" id="checkoutButton">PROCEED TO CHECKOUT</button><small class="demo-note">Demo frontend only — checkout is not connected to a payment service.</small></div>
+  </aside>
+  <aside class="side-drawer" id="wishlistDrawer" aria-label="Wishlist">
+    <div class="drawer-head"><h2>Your wishlist</h2><button class="close-btn" data-close>×</button></div>
+    <div class="cart-items" id="wishlistItems"><div class="empty-state">Save the pieces you love here. ♡</div></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
